@@ -10,7 +10,7 @@
 
     // ブロック実行時の処理内容
     ext.command_example = function (callback) {
-        confirm.log('Hello World!');
+        console.log('Hello World!');
     };
 
     // ブロックの形や表示する命令、上で作成した関数との紐付け
