@@ -29,6 +29,7 @@
     var descriptor = {
         blocks: [
             [' ', '%s を実行', 'command_example', 'デフォルト表示'],
+            [' ', 'aa を実行', 'command_example2', 'デフォルト2表示'],
         ]
     };
 
