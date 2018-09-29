@@ -13,6 +13,9 @@
         console.log('Hello World!');
         var httpRequest = new XMLHttpRequest();
         httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                console.log(httpRequest.responseText);
+            }
             // ここでサーバーからの応答を処理します。
             console.log('okOK');
         };
