@@ -16,7 +16,7 @@
             // ここでサーバーからの応答を処理します。
             console.log('okOK');
         };
-        httpRequest.open('GET', 'http://localhost:8001', true);
+        httpRequest.open('GET', 'http://localhost:8001/', true);
         httpRequest.send();
         console.log('get');
     };
