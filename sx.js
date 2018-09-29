@@ -11,8 +11,14 @@
     // ブロック実行時の処理内容
     ext.command_example = function (callback) {
         console.log('Hello World!');
-        var client = require('http').createClient(8001, 'localhost');
-        client.request('', res => { console.log('ok'); });
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function () {
+            // ここでサーバーからの応答を処理します。
+            console.log('okOK');
+        };
+        httpRequest.open('GET', 'http://localhost:8001', true);
+        httpRequest.send();
+        console.log('sent');
     };
 
     ext.command_example2 = function (callback) {
