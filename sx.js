@@ -17,8 +17,7 @@
             console.log('okOK');
         };
         httpRequest.open('GET', 'http://localhost:8001', true);
-        httpRequest.send();
-        console.log('sent');
+        console.log('get');
     };
 
     ext.command_example2 = function (callback) {
