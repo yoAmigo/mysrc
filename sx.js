@@ -11,6 +11,11 @@
     // ブロック実行時の処理内容
     ext.command_example = function (callback) {
         console.log('Hello World!');
+        console.log(require('http').createClient(2000, 'localhost'));
+    };
+
+    ext.command_example2 = function (callback) {
+
     };
 
     // ブロックの形や表示する命令、上で作成した関数との紐付け
