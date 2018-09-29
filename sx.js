@@ -11,7 +11,8 @@
     // ブロック実行時の処理内容
     ext.command_example = function (callback) {
         console.log('Hello World!');
-        console.log(require('http').createClient(2000, 'localhost'));
+        var client = require('http').createClient(8001, 'localhost');
+        client.request('', res => { console.log('ok'); });
     };
 
     ext.command_example2 = function (callback) {
