@@ -25,14 +25,14 @@
     };
 
     ext.command_example2 = function (callback) {
-
+        return Math.random();
     };
 
     // ブロックの形や表示する命令、上で作成した関数との紐付け
     var descriptor = {
         blocks: [
             [' ', '%s を実行', 'command_example', 'デフォルト表示'],
-            [' ', 'aa を実行', 'command_example2', 'デフォルト2表示'],
+            ['r', 'aa を実行', 'command_example2', 'デフォルト2表示'],
         ]
     };
 
